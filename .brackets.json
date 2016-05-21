@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/kasillas77/git/curso-nodejs/material/VT27_aplicacion_twitter/completo/app.js",
+        "three.js",
+        "/home/kasillas77/git/curso-nodejs/material/VT27_aplicacion_twitter/graficos/app.js",
+        "/home/kasillas77/git/curso-nodejs/material/VT13_subidas/server3.js",
+        "/home/kasillas77/git/curso-nodejs/material/VT13_subidas/server1.js",
+        "/home/kasillas77/git/curso-nodejs/material/VT13_subidas/server2.js"
+    ]
+}

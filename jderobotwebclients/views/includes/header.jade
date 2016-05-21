@@ -1,0 +1,28 @@
+-var links = {Home: "/", CameraView: "cameraview", RGBDViewer:"rgbdviewer", KobukiViewer:"kobukiviewer"}
+header#header
+  nav.navbar.navbar-inverse(role='banner')
+    div.container
+      div.navbar-header
+        button( type='button', class='navbar-toggle', data-toggle='collapse', data-target='.navbar-collapse')
+          span.sr-only Toggle navigation 
+          span.icon-bar 
+          span.icon-bar 
+          span.icon-bar
+        a(class='navbar-brand', href='index')
+          i.fa.fa-bolt 
+          | Jderobot Web Clients
+      div.collapse.navbar-collapse.navbar-right
+        ul.nav.navbar-nav
+         -each val, key in links
+           -if(key==title)
+            li.active
+              a(href=val) #{key}
+           -else
+            li
+              a(href=val) #{key}
+         li
+           a(href='uavviewer') UavViewer
+         li
+           a(href='introrobkobuki') IntrorobKobuki
+         li
+           a(href='introrobuav') IntrorobUav

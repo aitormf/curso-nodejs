@@ -1,0 +1,81 @@
+extends layout
+
+block css
+  link(rel='stylesheet', href='css/bootstrap.min.css')
+  link(href='css/main.css', rel='stylesheet')
+
+block js
+ script(src='js/jquery.min.js')
+ script(src='js/bootstrap.min.js')
+ script(src='js/index.js')
+
+block content
+  include includes/header
+  div.container
+    ul.nav.nav-tabs
+      li.active
+        a(data-toggle="pill", href="#espanol") Español
+      li
+        a(data-toggle="pill", href="#english") English
+    div.tab-content
+      div#espanol.tab-pane.fade.in.active
+        br
+        p Esta web forma parte del TFG de Aitor Martínez Fernández (<a href="http://urjc.es/estudios/grado/634-ingenieria-telematica" target="_blank">Grado en Ingenieria Telemática en la URJC</a>), que consiste en la creación de 6 clientes web para la plataforma <a href=http://jderobot.org"" target="_blank">JdeRobot</a> (proyecto de software libre desarrollado en la URJC) mediante el uso técnologías web modernas como pueden ser <a href="http://www.w3schools.com/html/html5_intro.asp" target="_blank">HTML5</a>, <a href="https://www.khronos.org/webgl/" target="_blank">WebGL</a>, <a href="http://threejs.org/" target="_blank">ThreeJS</a>, <a href="https://doc.zeroc.com/display/Ice36/Using+the+JavaScript+Distribution#UsingtheJavaScriptDistribution-OverviewoftheIceforJavaScriptDistribution" target="_blank">ICE JS</a>, <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="https://jquery.com/" target="_blank">JQuery</a>, <a href="http://www.w3schools.com/html/html5_webworkers.asp" target="_blank">WebWorkers</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promesas</a>,....
+         p A continuación se muestra una tabla con la versión desde la que cada navegador soporta los clientes:
+         div.table-responsive
+           table.table
+             thead
+               tr
+                 th IE
+                 th Edge
+                 th Firefox
+                 th Chrome
+                 th Safari
+                 th Opera
+                 th IOS Safari
+                 th Android <br> Browser
+                 th Chrome <br> for Android
+             tbody
+               tr
+                 td No soportado
+                 td 12
+                 td 29
+                 td 33
+                 td 7.1
+                 td 20
+                 td 8
+                 td 4.4.4
+                 td 47
+         p Para preparar los servidores hay que seguir las intrucciones del siguiente <a href="http://jderobot.org/Aitormf-tfg" target="_blank" >enlace</a>
+      div#english.tab-pane.fade
+        br
+        p This website is part of the TFG of Aitor Martínez Fernández (<a href="http://urjc.es/en/academics/634-ingenieria-telematica">degree in Telematics Engineering in URJC</a>), which consists in the creation of 6 web clients for the <a href="http://jderobot.org">JdeRobot</a> platform (project of free software developed at the URJC) using modern web technologies such as <a href="http://www.w3schools.com/html/html5_intro.asp" target="_blank">HTML5</a>, <a href="https://www.khronos.org/webgl/" target="_blank">WebGL</a>, <a href="http://threejs.org/" target="_blank">ThreeJS</a>, <a href="https://doc.zeroc.com/display/Ice36/Using+the+JavaScript+Distribution#UsingtheJavaScriptDistribution-OverviewoftheIceforJavaScriptDistribution" target="_blank">ICE JS</a>, <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="https://jquery.com/" target="_blank">JQuery</a>, <a href="http://www.w3schools.com/html/html5_webworkers.asp" target="_blank">WebWorkers</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promises</a>,....
+        p Below is a table with the version from which each browser supports clients:
+        div.table-responsive
+          table.table
+            thead
+              tr
+               th IE
+               th Edge
+               th Firefox
+               th Chrome
+               th Safari
+               th Opera
+               th IOS Safari
+               th Android <br> Browser
+               th Chrome <br> for Android
+            tbody
+              tr
+               td Not support
+               td 12
+               td 29
+               td 33
+               td 7.1
+               td 20
+               td 8
+               td 4.4.4
+               td 47
+         p To prepare servers should follow the instructions from the following <a href="http://jderobot.org/Aitormf-tfg" target="_blank" >link</a>
+  
+  
+
